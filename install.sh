@@ -9,11 +9,11 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf MinecraftPurpleThemebackup.tar.gz pterodactyl
+    tar -cvf hicstrnodesthemebackup.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r MinecraftPurpleTheme
-    git clone https://github.com/Angelillo15/MinecraftPurpleTheme.git
+    git clone https://github.com/ewn69/hicstrnodes-theme.git
     cd MinecraftPurpleTheme
     rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -47,7 +47,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/MinecraftPurpleTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/ewn69/hicstrnodes-theme/main/repair.sh)
 }
 
 restoreBackUp(){
@@ -60,11 +60,11 @@ restoreBackUp(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "Copyright (c) 2022 Angelillo15 | angelillo15.es"
+echo "HicstrNdoes Theem"
 echo "This program is free software: you can redistribute it and/or modify"
 echo ""
-echo "Discord: https://discord.angelillo15.es/"
-echo "Website: https://angelillo15.es/"
+echo "Discord: https://discord.hicstrnodes.com"
+echo "Website: https://hicstrnodes.com/"
 echo ""
 echo "[1] Install theme"
 echo "[2] Restore backup"
